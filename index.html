@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Goal-Guided Reinforcement Learning: Leveraging Large Language Models for Task Decomposition</title>
+  <!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico"> -->
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Goal-Guided Reinforcement Learning: Leveraging Large Language Models for Long-horizon Task Decomposition</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <!-- <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span> -->
+                <a href="https://tomshine123.github.io/" target="_blank">Ceng Zhang<sup>1</sup></a>,</span>
+                <span class="author-block">
+                  <!-- <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span> -->
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Zhanhong Sun<sup>1</sup></a>,</span>
+                  <span class="author-block">
+                    <a href="https://chirikjianlab.github.io/" target="_blank">Gregory Scott Chirikjian<sup>1,2</sup></a>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <!-- <span class="author-block">Institution Name<br>Conferance name and year</span> -->
+                    <span class="author-block"><sup>1</sup>National University of Singapore, Singapore<br><sup>2</sup>University of Delaware, USA</span>
+                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary PDF link -->
+                    <span class="link-block">
+                      <a href="static/pdfs/Supply.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span>
+
+                  <!-- Github link -->
+<!--                   <span class="link-block">
+                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Github</span>
+                  </a>
+                </span> -->
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video -->
+<!-- <section class="hero teaser"> -->
+  <!-- <div class="container is-max-desktop"> -->
+    <!-- <div class="hero-body"> -->
+      <!-- <video poster="" id="tree" autoplay controls muted loop height="100%"> -->
+        <!-- Your video here -->
+        <!-- <source src="static/videos/banner_video.mp4" -->
+        <!-- type="video/mp4"> -->
+      <!-- </video> -->
+      <!-- <h2 class="subtitle has-text-centered"> -->
+        <!-- Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus.  -->
+      <!-- </h2> -->
+    <!-- </div> -->
+  <!-- </div> -->
+<!-- </section> -->
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Reinforcement learning (RL) has long struggled with exploration in vast state-action spaces, particularly for intricate tasks that necessitate a series of well-coordinated actions. Meanwhile, large language models (LLMs) equipped with fundamental knowledge have been utilized for task planning across various domains. However, planning for long-term objectives can be demanding, as they function independently from task environments where their knowledge might not be perfectly aligned, hence often overlooking possible physical limitations.  To this end, we propose a goal-based RL framework that leverages prior knowledge of LLMs to benefit the training process. We introduce a hierarchical module that features a goal generator to segment a long-horizon task into reachable subgoals and a policy planner to generate action sequences based on the current goal. Subsequently, the policies derived from LLMs guide the RL to achieve each subgoal sequentially. We evaluate the proposed framework across two distinct simulation environments, each presenting tasks that require a long sequence of actions for success. The results demonstrate its efficiency and robustness in handling novel tasks with complex state and action spaces.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+ 
+
+<section class="section hero is-small"></section>
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="content">
+          <h2 class="title is-3">Background</h2>
+          <div class="content has-text-justified">
+            <p>
+              When tasked with a complex long-horizon task, making decisions for the next step can be challenging from a large number of available options. And in this cases, if LLMs are directly instructed to target the task objective, potential environmental constraints can be easily overlooked. Instead, it is intuitive to divide the task objective to several manageable subgoals and achieve them sequentially.
+            </p>
+          </div>
+          <div class="image-container">
+            <img src="static/images/fig1.png" alt="Normal and Anomalous Representations" class="center-image small-image"/>
+            <img src="static/images/fig3.png" alt="Normal and Anomalous Representations" class="center-image small-image"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section hero is-small"></section>
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="content">
+          <h2 class="title is-3">Framework</h2>
+          <div class="level-set has-text-justified">
+            <p>
+              Our proposed LLM-assisted RL framework consists of two hierarchically connected modules:<br>
+              (1) A subgoal generator (left side) that takes in the distant task objective and initial states of the environment.<br>
+              (2) An policy generator (right side) based on the current state and the corresponding goal to output action sequences.
+            </p>
+          </div>
+          <img src="static/images/fig2.png" alt="Normal and Anomalous Representations" class="center-image large-margin"/>
+          <div class="level-set has-text-justified">
+            <p>
+              The goal generator breaks down the complex task into several subgoals in text. Subsequently, the policy generator produces actions as the LLM policy based on the caption of a given state and current goal. The disparity between the agent's policy and LLM policy serves as an additional policy loss for RL algorithms. Additionally, a goal inspector measures the cosine similarity between the encoded embeddings of the goal and the state caption to check if the goal is reached.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video -->
+<!-- <section class="hero teaser"> -->
+  <!-- <div class="container is-max-desktop"> -->
+    <!-- <div class="hero-body"> -->
+      <!-- <video poster="" id="tree" autoplay controls muted loop height="100%"> -->
+        <!-- Your video here -->
+        <!-- <source src="static/videos/banner_video.mp4" -->
+        <!-- type="video/mp4"> -->
+      <!-- </video> -->
+      <!-- <h2 class="subtitle has-text-centered"> -->
+        <!-- Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus.  -->
+      <!-- </h2> -->
+    <!-- </div> -->
+  <!-- </div> -->
+<!-- </section> -->
+<!-- End teaser video -->
+
+
+<section class="section hero is-small"></section>
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full">
+        <div class="content">
+          <h2 class="title is-3">Task Environments</h2>
+          <div class="video-container">
+            <video poster="" id="tree1" autoplay controls muted loop class="video-item">
+              <source src="static/videos/v1.mp4" type="video/mp4">
+            </video>
+            <video poster="" id="tree2" autoplay controls muted loop class="video-item">
+              <source src="static/videos/v2.mp4" type="video/mp4">
+            </video>
+          </div>
+          <h4 class="video-title">FoodPreparation and Entertainment <sup>[1]</sup> in VirtualHome <sup>[2]</sup></h4>
+
+          <div class="video-full-container">
+            <video poster="" id="tree3" autoplay controls muted loop class="video-full">
+              <source src="static/videos/roman.mp4" type="video/mp4">
+            </video>
+          </div>
+          <h4 class="video-title">ROMAN Robot Environment <sup>[3]</sup></h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Image carousel -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+    <h2 class="title is-3">Results</h2>
+    
+      <div id="results-carousel" class="carousel results-carousel">
+
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/fig6.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+          Comparsion on learning curves with different RL-based methods.
+          </h2>
+        </div>
+
+        <div class="item item-2">
+          <!-- Your image here -->
+          <img src="static/images/tab1.png" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+          Evaluation on task success rate.
+          </h2>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End image carousel -->
+
+
+<!-- Youtube video -->
+<!-- <section class="hero is-small is-light"> -->
+  <!-- <div class="hero-body"> -->
+    <!-- <div class="container"> -->
+      <!-- Paper video. -->
+      <!-- <h2 class="title is-3">Task Environments</h2> -->
+      <!-- <div class="columns is-centered has-text-centered"> -->
+        <!-- <div class="column is-four-fifths"> -->
+          
+          <!-- <div class="publication-video"> -->
+            <!-- Youtube embed code here -->
+            <!-- <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+          <!-- </div> -->
+        <!-- </div> -->
+      <!-- </div> -->
+    <!-- </div> -->
+  <!-- </div> -->
+<!-- </section> -->
+<!-- End youtube video -->
+
+
+<!-- Video carousel -->
+<!-- <section class="hero is-small"> -->
+  <!-- <div class="hero-body"> -->
+    <!-- <div class="container"> -->
+      <!-- <h2 class="title is-3">Another Carousel</h2> -->
+      <!-- <div id="results-carousel" class="carousel results-carousel"> -->
+        <!-- <div class="item item-video1"> -->
+          <!-- <video poster="" id="video1" autoplay controls muted loop height="100%"> -->
+            <!-- Your video file here -->
+            <!-- <source src="static/videos/carousel1.mp4" -->
+            <!-- type="video/mp4"> -->
+          <!-- </video> -->
+        <!-- </div> -->
+        <!-- <div class="item item-video2"> -->
+          <!-- <video poster="" id="video2" autoplay controls muted loop height="100%"> -->
+            <!-- Your video file here -->
+            <!-- <source src="static/videos/carousel2.mp4" -->
+            <!-- type="video/mp4"> -->
+          <!-- </video> -->
+        <!-- </div> -->
+        <!-- <div class="item item-video3"> -->
+          <!-- <video poster="" id="video3" autoplay controls muted loop height="100%">\ -->
+            <!-- Your video file here -->
+            <!-- <source src="static/videos/carousel3.mp4" -->
+            <!-- type="video/mp4"> -->
+          <!-- </video> -->
+        <!-- </div> -->
+      <!-- </div> -->
+    <!-- </div> -->
+  <!-- </div> -->
+<!-- </section> -->
+<!-- End video carousel -->
+
+
+
+
+
+
+<!-- Paper poster -->
+<!-- <section class="hero is-small is-light"> -->
+  <!-- <div class="hero-body"> -->
+    <!-- <div class="container"> -->
+      <!-- <h2 class="title">Poster</h2> -->
+
+      <!-- <iframe  src="static/pdfs/sample.pdf" width="100%" height="550"> -->
+          <!-- </iframe> -->
+        
+      <!-- </div> -->
+    <!-- </div> -->
+  <!-- </section> -->
+<!--End paper poster -->
+
+
+<!--BibTex citation -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Reference</h2>
+    <div class="content has-text-justified">
+      <p>
+        [1] Tan, Weihao, et al. "True knowledge comes from practice: Aligning llms with embodied environments via reinforcement learning." arXiv preprint arXiv:2401.14151 (2024).<br>
+        [2] Puig, Xavier, et al. "Virtualhome: Simulating household activities via programs." Proceedings of the IEEE conference on computer vision and pattern recognition. 2018.<br>
+        [3] Triantafyllidis, Eleftherios, et al. "Hybrid hierarchical learning for solving complex sequential tasks using the robotic manipulation network ROMAN." Nature Machine Intelligence 5.9 (2023): 991-1005.
+      </p>
+    </div>
+  </div>
+</section>
+<!--End BibTex citation -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>

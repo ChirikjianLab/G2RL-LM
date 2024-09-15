@@ -1,0 +1,214 @@
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+
+.footer .icon-link {
+    font-size: 25px;
+    color: #000;
+}
+
+.link-block a {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.dnerf {
+  font-variant: small-caps;
+}
+
+
+.teaser .hero-body {
+  padding-top: 0;
+  padding-bottom: 3rem;
+}
+
+.teaser {
+  font-family: 'Google Sans', sans-serif;
+}
+
+
+.publication-title {
+}
+
+.publication-banner {
+  max-height: parent;
+
+}
+
+.publication-banner video {
+  position: relative;
+  left: auto;
+  top: auto;
+  transform: none;
+  object-fit: fit;
+}
+
+.publication-header .hero-body {
+}
+
+.publication-title {
+    font-family: 'Google Sans', sans-serif;
+}
+
+.publication-authors {
+    font-family: 'Google Sans', sans-serif;
+}
+
+.publication-venue {
+    color: #555;
+    width: fit-content;
+    font-weight: bold;
+}
+
+.publication-awards {
+    color: #ff3860;
+    width: fit-content;
+    font-weight: bolder;
+}
+
+.publication-authors {
+}
+
+.publication-authors a {
+   color: hsl(204, 86%, 53%) !important;
+}
+
+.publication-authors a:hover {
+    text-decoration: underline;
+}
+
+.author-block {
+  display: inline-block;
+}
+
+.publication-banner img {
+}
+
+.publication-authors {
+  /*color: #4286f4;*/
+}
+
+.publication-video {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+
+    overflow: hidden;
+    border-radius: 10px !important;
+}
+
+.publication-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.publication-body img {
+}
+
+.results-carousel {
+  display: flex;
+  overflow-x: auto; /* 启用水平滚动 */
+  scroll-snap-type: x mandatory; /* 启用强制横向滚动对齐 */
+  scroll-padding: 0 50%; /* 确保每个项目可以在滚动结束时居中 */
+  gap: 20px; /* 项目之间的间距 */
+  /* overflow: hidden; */
+}
+
+.results-carousel .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: center; 
+  flex: 0 0 auto;
+  margin: 5px;
+  overflow: hidden;
+  padding: 20px;
+  font-size: 0;
+}
+
+.results-carousel video {
+  margin: 0;
+}
+
+.slider-pagination .slider-page {
+  background: #000000;
+}
+
+.eql-cntrb { 
+  font-size: smaller;
+}
+
+/* 减小部分之间的间距 */
+section.section {
+  padding-top: 1.7rem; /* 根据需要调整 */
+  padding-bottom: 1.7rem; /* 根据需要调整 */
+}
+
+.large-margin {
+  margin-top: 30px; /* 或根据需要调整具体值 */
+  margin-bottom: 30px; /* 或根据需要调整具体值 */
+}
+
+.image-container {
+  display: flex; /* 启用 Flexbox 布局 */
+  justify-content: space-between; /* 在图片之间分配空间 */
+}
+
+.small-image {
+  max-width: 48%; /* 每张图片最大占父容器宽度的48%，根据需要调整 */
+  height: auto;   /* 自动调整高度以保持图片比例 */
+  object-fit: contain; /* 保持图片比例，不拉伸图片 */
+}
+
+.video-container {
+  display: flex; /* 启用 Flexbox 布局 */
+  justify-content: center; /* 水平居中对齐 */
+  align-items: center; /* 垂直居中对齐（如果需要） */
+  gap: 20px; /* 控制两个视频之间的间距 */
+  margin-bottom: -10px;
+}
+
+.video-item {
+  max-width: 41%; /* 控制每个视频的宽度，确保不会超出页面宽度 */
+  height: auto; /* 保持宽高比 */
+}
+
+.video-full {
+  display: flex;
+  width: 84%; /* 第三个视频占整个容器的宽度 */
+  height: auto;
+}
+
+.video-full-container {
+  display: flex;
+  justify-content: center; /* 确保视频在水平居中 */
+  width: 100%; /* 容器占满可用宽度 */
+  margin-bottom: -10px;
+}
+
+.item-1 img {
+  width: 1200px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+/* 设置第二张图片的大小 */
+.item-2 img {
+  width: 700px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.video-title {
+  margin-top: 10px; /* 视频和标题之间的间距 */
+  font-size: 1.2rem; /* 调整标题字体大小 */
+  font-weight: bold;
+  text-align: center; /* 标题居中 */
+  width: 100%; /* 确保标题占满整个父容器 */
+}
